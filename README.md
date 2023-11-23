@@ -14,7 +14,7 @@ This project is a Linktree clone, a platform that allows users to showcase multi
 - JavaScript
 
 ## Contact Information
-For any inquiries or issues, feel free to contact Mohd Absar Alam at workwithabsar@gmail.com.
+For any inquiries or issues, feel free to contact me at workwithabsar@gmail.com.
 
 ## Acknowledgments
 Special thanks to the creators of Linktree for the inspiration behind this project.
