@@ -23,6 +23,7 @@ header{
     height: 40px;
     border-radius: 20px;
     background-color: rgb(240, 240, 240);
+    cursor: pointer;
 }
 
 .share-button svg{

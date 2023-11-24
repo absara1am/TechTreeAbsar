@@ -1,12 +1,5 @@
-const shareButtons = document.querySelectorAll(".tile-share-button");
-console.log(shareButtons);
-
-shareButtons.forEach((shareButton) =>
-  shareButton.addEventListener("click", copyText)
-);
-
+// Function to handle copying text to the clipboard
 async function copyText(e) {
-  //prevent button going to the site
   e.preventDefault();
   const link = this.getAttribute("link");
   console.log(link);
@@ -16,4 +9,18 @@ async function copyText(e) {
   } catch (err) {
     console.error(err);
   }
+}
+
+// Select all elements with the class ".tile-share-button" and add event listeners
+const tileShareButtons = document.querySelectorAll(".tile-share-button");
+tileShareButtons.forEach((tileShareButton) =>
+  tileShareButton.addEventListener("click", copyText)
+);
+
+// Assuming you have a share button in the header with the class ".share-button"
+const headerShareButton = document.querySelector(".share-button");
+
+// Check if the headerShareButton is present on the page
+if (headerShareButton) {
+  headerShareButton.addEventListener("click", copyText);
 }
